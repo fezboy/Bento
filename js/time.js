@@ -23,6 +23,7 @@ function displayClock() {
   var dd = d.getDate();
   var min = (mins = ('0' + d.getMinutes()).slice(-2));
   var hh = d.getHours();
+  var ss = d.getSeconds();
   var ampm = '';
 
   if (format_12hour) {
@@ -34,6 +35,7 @@ function displayClock() {
   document.getElementById('hour').innerText = hh;
   document.getElementById('separator').innerHTML = ' : ';
   document.getElementById('minutes').innerText = min + ampm;
+  document.getElementById('seconds').innerText = ss;
 
   document.getElementById('month').innerText = mm;
   document.getElementById('day').innerText = dd;
