@@ -33,7 +33,7 @@ function displayClock() {
   }
 
   document.getElementById('hour').innerText = hh;
-  document.getElementById('separator').innerHTML = ' : ';
+  document.getElementsByClassName('separator').innerHTML = ' : ';
   document.getElementById('minutes').innerText = min + ampm;
   document.getElementById('seconds').innerText = ss;
 
